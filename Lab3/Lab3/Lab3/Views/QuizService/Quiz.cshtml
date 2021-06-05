@@ -1,0 +1,12 @@
+﻿@model Lab3.Models.QuizModel
+@{ ViewBag.Title = "Quiz"; }
+<h2>Quiz</h2>
+<b>@Model.Number1  @Model.Operation @Model.Number2 =</b>
+<br />
+<form asp-controller="QuizService">
+    <input name="Answer" class="mb-3 mr-3" /><br />
+    <div class="mb-3">
+        <input type="submit" value="Next" name="action" class="btn btn-outline-secondary btn-sm" />
+        <input type="submit" value="Finish" name="action" class="btn btn-primary btn-sm" />
+    </div>
+</form>
